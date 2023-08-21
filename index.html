@@ -5,57 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MP1 | by Charlson Guevarra</title>
     <link rel="stylesheet" href="CSS/bootstrap.css">
-    <link rel="stylesheet" href="CSS/TravelWebsiteDesignMainPage.css">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <div class="section1 overflow-hidden container-fluid p-0 position-relative">
-        <img src="Images/Background Hiker.jpg" class="image1 img-fluid position-absolute top-0 z-n1" alt="Hiker Background">
-        <header class="headerDesign container-fluid position-sticky top-0 z-2">
-
-                <div class="row">
-                    <div class="col d-flex justify-content-start align-items-center">
-                        <img src="Images/Travel Logo.png" class="imgLogo img-thumbnail mt-2 mb-2" alt="...">
-                        <ul class="nav nav-underline ms-3">
-                            <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Main</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-light" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Pricing</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col d-flex justify-content-end align-items-center">
-                        <nav class="navbar">
-                            <div class="container-fluid p-0">
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                </form>
-                            </div>
-                        </nav>
+    <div class="imgContainer">
+        <img src="Images\Background Hiker.jpg" class="imgSection" alt="...">
+    </div>
+    <header class="header350 container-fluid position-sticky top-0 z-2">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <img src="Images\Travel Guide Logo.png" class="img-fluid imgLogo" alt="...">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <img src="Images\Travel Guide Logo.png" class="img-fluid imgLogo" alt="...">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Main</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                      </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Type your destination!" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <hr>
+    <main class="main350 container-fluid mw-100">
+        <section class="section350 container-fluid">
+            <div class="container-fluid p-0">
+                <div class="row p-0 mt-5">
+                    <div class="col d-flex flex-column justify-content-center align-items-start p-0">
+                        <p class="title1 text-light fw-bold mb-0">Explore the world!</p>
                     </div>
                 </div>
-
-        </header>
-        <hr class="container-fluid z-2">
-        <div class="section2 container-fluid p-0">
-            <div class="row p-0 mt-5">
-                <div class="col d-flex flex-column justify-content-center align-items-start p-0">
-                    <p class="title1 text-light fw-bold">Traveling Made Easy</p>
-                    <p class="paragraph1 text-light fw-bold">Let us guide you to extraordinary destinations, where you can escape the demands of daily life. Discover the art of unwinding, immerse yourself in new cultures, and create timeless memories. Travel and experience tranquility before time slips away.</p>
-                </div>
-                <div class="col d-flex justify-content-center align-items-center p-0">
-                    <p class="title1 text-light fw-bold"></p>
+                <div class="row p-0">
+                    <div class="col-7 d-flex flex-column justify-content-center align-items-start p-0">
+                        <p class="paragraph1 text-light fw-bold mb-0">invites you to embark on a thrilling journey of discovery and wanderlust. Leave the beaten path behind as you venture into the unknown, ready to uncover the extraordinary. From the vibrant city streets to the tranquil natural wonders, let your curiosity guide you as you immerse yourself in diverse cultures, breathtaking landscapes, and captivating experiences. Embrace the spirit of exploration, expand your horizons, and create cherished memories that will forever connect you to the beauty and wonder of our vast and awe-inspiring world.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    
-
+        </section>
+    </main>
 
 
 </body>

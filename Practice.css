@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+img {
+    width: 100vw;
+    height: 54.7945205479vh;
+    object-fit: cover;
+    object-position: 20% 0%;
+}
+
+header.headerStyle {
+    height: 5.7077625571vh;
+}
+
+img.imgLogo {
+    height: 5.7077625571vh;
+    width: auto;
+}
+
+img.section1img {
+    z-index: -5;
+}

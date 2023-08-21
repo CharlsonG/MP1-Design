@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.imgLogo {
+    width: 14.286vw;
+}
+
+.imgContainer {
+    height: inherit;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 52.73vh;
+}
+
+div img.imgSection {
+    height: inherit;
+    width: inherit;
+    object-position: 50% 0%;
+    object-fit: cover;
+}
+
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+p.title1 {
+    font-family: Brush Script MT, cursive;
+    font-size: 40px;
+}
+
+p.paragraph1 {
+    font-family: Arial Narrow, sans-serif, cursive;
+    font-size: 12px;
+}
+
