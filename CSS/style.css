@@ -14,7 +14,6 @@ body {
 }
 
 .imgContainer {
-    height: inherit;
     position: absolute;
     top: 0;
     z-index: -1;
@@ -23,6 +22,21 @@ body {
 }
 
 div img.imgSection {
+    height: inherit;
+    width: inherit;
+    object-position: 50% 0%;
+    object-fit: cover;
+}
+
+.imgContainer2 {
+    position: absolute;
+    top: 52.73vh;
+    z-index: -1;
+    width: 100vw;
+    height: 52.73vh;
+}
+
+div img.imgSection2 {
     height: inherit;
     width: inherit;
     object-position: 50% 0%;
