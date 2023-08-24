@@ -32,7 +32,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: black;
     overflow-x: hidden;
 }
@@ -368,6 +368,19 @@ section.section2 div.carousel2 div.popularOptions div.popularOptionsContainer {
     background-position: 50% 50%;
     border: 20px solid rgba(0, 0, 0, 0.8);
     box-shadow: 0px 0px 40px 40px rgba(0, 0, 0, 1) inset;
+    transition: border 1s;
+}
+
+section.section2 div.carousel2 div.popularOptions div.popular1:hover, 
+section.section2 div.carousel2 div.popularOptions div.popular2:hover, 
+section.section2 div.carousel2 div.popularOptions div.popular3:hover, 
+section.section2 div.carousel2 div.popularOptions div.popular4:hover, 
+section.section2 div.carousel2 div.popularOptions div.popular5:hover, 
+section.section2 div.carousel2 div.popularOptions div.popular6:hover, 
+section.section2 div.carousel2 div.popularOptions div.popular7:hover, 
+section.section2 div.carousel2 div.popularOptions div.popular8:hover {
+    border: 20px solid rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
 
 section.section2 div.carousel2 div.popularOptions div.popular1 {
@@ -548,12 +561,20 @@ footer div.copyright {
     * {
         font-size: 24px;
     }
+
+    div.offCanvassContainer {
+        width: 318.75px;
+    }
 }
 
 /* First BreakPoint CSS Change >750 or min-width: 751px; */
 @media (min-width: 751px) and (max-width: 1099px) {
     * {
         font-size: 28px;
+    }
+
+    div.offCanvassContainer {
+        width: 318.75px;
     }
 
     footer div.logoContainer {
@@ -632,10 +653,14 @@ footer div.copyright {
         font-size: 28px;
     }
 
+    div.offCanvassContainer {
+        width: 318.75px;
+    }
+
     footer div.logoContainer {
         width: 525px;
     }
-    
+
     header div.navBarContainer {
         display: flex;
     }
