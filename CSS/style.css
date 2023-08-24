@@ -1,60 +1,701 @@
 * {
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: Georgia, serif;;
+}
+
+:root {
+    --section1BackgroundImage: url('../Images/Background Hiker.jpg');
+    --section2BackgroundImage: url('../Images/Background Highway.jfif');
+    --section3BackgroundImage: url('../Images/Switzerland Mountains.jpg');
+    --option1Image: url('../Images/Nature Lover.jpg');
+    --option2Image: url('../Images/Urban Cities.jpg');
+    --option3Image: url('../Images/Culture Exploration.jpg');
+    --option4Image: url('../Images/Relaxation and Wellness.jpg');
+
+    --popularImage1: url('../Images/Paris, France.jpg');
+    --popularImage2: url('../Images/Rome, Italy.jpg');
+    --popularImage3: url('../Images/Tokyo, Japan.jpg');
+    --popularImage4: url('../Images/New York, USA.jpg');
+    --popularImage5: url('../Images/Sydney, Australia.jpg');
+    --popularImage6: url('../Images/Cape Town, South Africa.jpg');
+    --popularImage7: url('../Images/Rio de Janeiro, Brazil.jpg');
+    --popularImage8: url('../Images/Barcelona, Spain.jpg');
+
+    --offCanvassBackGround: url('../Images/Plane.jpg');
+
+    --fontColorWhite09: rgba(255, 255, 255, 1);
+    --fontShadowWhite02: rgba(0, 0, 0, 0.8);
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
 }
 
-.imgLogo {
-    width: 14.286vw;
+/* offCanvass Design */
+div.offCanvassContainer {
+    width: 75vw;
+    height: 93.0126002291vh;
+    position: fixed;
+    top: 6.9873997709vh;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 1s;
+    background-image: var(--offCanvassBackGround);
+    background-color: rgba(255, 255, 255, 0.9);
+    background-size: cover;
+    background-position: 100% 0;
+    border-left: 15px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 100px 40px 60px 10px rgba(0, 0, 0, 1) inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 
-.imgContainer {
-    position: absolute;
+div.offCanvassContainer img.imgLogo {
+    margin: 20px 0 20px 20px;
+}
+
+div.offCanvassContainer div.navBarContainer {
+    height: auto;
+    width: auto;
+    margin: 20px 0 20px 20px;
+}
+
+div.offCanvassContainer div.navBarContainer nav.navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+div.offCanvassContainer div.navBarContainer nav.navBar a.navBarItem {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    position: fixed;
     top: 0;
-    z-index: -1;
-    width: 100vw;
-    height: 52.73vh;
-}
-
-div img.imgSection {
-    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 3%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    background-color: transparent;
     width: inherit;
-    object-position: 50% 0%;
-    object-fit: cover;
 }
 
-.imgContainer2 {
+img.imgLogo {
+    height: auto;
+    width: 50px;
+    display: inline-block;
+}
+
+/* Toggle Design */
+button.toggleIconContainer {
+    border-radius: 10px;
+    width: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+div.toggleLine {
+    width: 30px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+header div.navBarContainer {
+    display: none;
+    flex-direction: row-reverse;
+    width: 500px;
+    height: inherit;
+}
+
+header div.navBarContainer nav.navBar {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div.navBarContainer nav.navBar a.navBarItem {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+}
+
+a.active {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+section {
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    background-position: 30% 0%;
+    transition: background-image 0.5;
+}
+
+section.section1 {
+    position: relative;
+    background-image: var(--section1BackgroundImage);
+    background-color: #f0f0f0;
+    padding: 200px 0 20px;
+    box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 1) inset;
+}
+
+section.section1 div#mainTitleContainer {
+    margin-bottom: 30%;
+    padding: 0 3% 10px;
+}
+
+section.section1 div h1#mainTitle {
+    color: var(--fontColorWhite09);
+    font-family: Brush Script MT;
+    font-size: 3rem;
+    margin: 0 0 30px;
+    text-shadow: 5px 5px var(--fontShadowWhite02);
+}
+
+section.section1 div p#mainTitleDescription {
+    color: white;
+    text-shadow: 3px 1px black;
+    margin: 0;
+    padding: 0 30% 0 0;
+    text-align: center;
+}
+
+section.section1 button#pricing {
+    position: relative;
+    left: 3%;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    padding: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    transition: 0.5;
+}
+
+section.section3 button.seeMorePlaces {
+    position: relative;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    padding: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    transition: 0.5;
+}
+
+section.section1 button#pricing:hover,
+section.section3 button.seeMorePlaces:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 1);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    text-shadow: 5px 5px rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+section.sectionBetween {
+    position: relative;
+    background-color: black;
+    margin: 50px 0;
+}
+
+section.sectionBetween div.carousel1 {
+    position: relative;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+section.sectionBetween div.carousel1 div.optionsForYou {
+    display: flex;
+    width: 400%;
+    position: relative;
+    left: 0;
+    transition: 1s;
+}
+
+section.sectionBetween div.carousel1 div.optionsForYou div.optionContainer {
+    position: relative;
+    padding: 0 2%;
+    width: 100%;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 20px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 1) inset;
+}
+
+section.sectionBetween div.carousel1 div.optionsForYou div.optionContainer h3 {
+    font-size: 2rem;
+    margin: 0 0 20px;
+    color: white;
+    text-shadow: 2px 1px black;
+    text-align: center;
+}
+
+section.sectionBetween div.carousel1 div.optionsForYou div.optionContainer p {
+    margin: 0;
+    color: white;
+    text-shadow: 2px 1px black;
+    text-align: center;
+}
+
+section.sectionBetween div.carousel1 div.optionsForYou div.option1 {
+    background-image: var(--option1Image);
+}
+
+section.sectionBetween div.carousel1 div.optionsForYou div.option2 {
+    background-image: var(--option2Image);
+}
+
+section.sectionBetween div.carousel1 div.optionsForYou div.option3 {
+    background-image: var(--option3Image);
+}
+
+section.sectionBetween div.carousel1 div.optionsForYou div.option4 {
+    background-image: var(--option4Image);
+}
+
+
+
+
+section.sectionBetween div.carousel1 button.carousel1Buttons {
+    height: 25%;
+    width: 7.5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
     position: absolute;
-    top: 52.73vh;
-    z-index: -1;
-    width: 100vw;
-    height: 52.73vh;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 25px;
+    transition: 1s;
 }
 
-div img.imgSection2 {
-    height: inherit;
-    width: inherit;
-    object-position: 50% 0%;
-    object-fit: cover;
+section.sectionBetween div.carousel1 button.carousel1Buttons:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+section.sectionBetween div.carousel1 button.buttonBack {
+    left: 20px;
+}
+
+section.sectionBetween div.carousel1 button.buttonNext {
+    right: 20px;
+}
+
+section.section2 {
+    background-image: var(--section2BackgroundImage);
+    background-color: #f0f0f0;
+    padding: 100px 0 20px;
+    box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 1) inset;
+}
+
+section.section2 div#section2MainTitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.section2 h1#section2MainTitle {
+    font-size: 2.5rem;
+    padding: 0 30px;
+    text-shadow: 5px 5px var(--fontShadowWhite02);
+    color: var(--fontColorWhite09);
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+section.section2 div.carousel2 {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-bottom: 100px;
+    overflow: hidden;
 }
 
 
-hr {
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+section.section2 div.carousel2 div.popularOptions {
+    display: flex;
+    width: 800%;
+    position: relative;
+    left: 0;
+    transition: 1s;
 }
 
-p.title1 {
-    font-family: Brush Script MT, cursive;
-    font-size: 40px;
+section.section2 div.carousel2 div.popularOptions div.popularOptionsContainer {
+    position: relative;
+    padding: 0 1%;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 20px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 40px 40px rgba(0, 0, 0, 1) inset;
 }
 
-p.paragraph1 {
-    font-family: Arial Narrow, sans-serif, cursive;
-    font-size: 12px;
+section.section2 div.carousel2 div.popularOptions div.popular1 {
+    background-image: var(--popularImage1);
 }
 
+section.section2 div.carousel2 div.popularOptions div.popular2 {
+    background-image: var(--popularImage2);
+}
+
+section.section2 div.carousel2 div.popularOptions div.popular3 {
+    background-image: var(--popularImage3);
+}
+
+section.section2 div.carousel2 div.popularOptions div.popular4 {
+    background-image: var(--popularImage4);
+}
+
+section.section2 div.carousel2 div.popularOptions div.popular5 {
+    background-image: var(--popularImage5);
+}
+
+section.section2 div.carousel2 div.popularOptions div.popular6 {
+    background-image: var(--popularImage6);
+}
+
+section.section2 div.carousel2 div.popularOptions div.popular7 {
+    background-image: var(--popularImage7);
+}
+
+section.section2 div.carousel2 div.popularOptions div.popular8 {
+    background-image: var(--popularImage8);
+}
+
+section.section2 div.carousel2 div.popularOptions div.popularOptionsContainer h3 {
+    font-size: 1rem;
+    margin: 0 0 10px;
+    color: white;
+    text-shadow: 2px 1px black;
+    text-align: center;
+}
+
+section.section2 div.carousel2 div.popularOptions div.popularOptionsContainer p {
+    font-size: 0.75rem;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 1px black;
+    text-align: center;
+}
+
+
+
+section.section2 div.carousel2 button.carousel2Buttons {
+    height: 15%;
+    width: 7.5%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+section.section2 div.carousel2 button.carousel2Buttons:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+section.section2 div.carousel2 button.buttonBack2 {
+    left: 20px;
+}
+
+section.section2 div.carousel2 button.buttonNext2 {
+    right: 20px;
+}
+
+section.section3 {
+    position: relative;
+    background-image: var(--section3BackgroundImage);
+    background-color: #f0f0f0;
+    margin-top: 50px;
+    padding: 200px 0 50px;
+    box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 1) inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.section3 div#section3TitleContainer h1 {
+    font-size: 3rem;
+    padding: 0 2%;
+    text-shadow: 5px 5px var(--fontShadowWhite02);
+    color: var(--fontColorWhite09);
+    text-align: center;
+    margin: 0 0 100px 0;
+}
+
+section.section3 div.subContainer {
+    padding: 0 2%;
+}
+
+section.section3 div.subContainer h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin: 0 0 30px;
+    color: white;
+    text-shadow: 2px 1px black;
+    text-align: center;
+}
+
+section.section3 div.subContainer p {
+    font-size: 1rem;
+    margin: 0 0 40px;
+    color: white;
+    text-shadow: 2px 1px black;
+    text-align: center;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255,0.1);
+    border-top: 1px solid rgba(255, 255, 255,0.5);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer div.logoContainer {
+    display: flex;
+    width: 75vw;
+    justify-content: space-evenly;
+}
+
+footer div.logoContainer div.logo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.logoContainer div.logo:hover {
+    cursor: pointer;
+}
+
+.fa-facebook-f:before,
+.fa-skype:before,
+.fa-envelope:before {
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer div.copyright {
+    color: white;
+    font-size: 0.75rem;
+}
+
+/* Font Size Media */
+
+@media (min-width: 425px) and (max-width: 559px) {
+    * {
+        font-size: 20px;
+    }
+
+    div.offCanvassContainer {
+        width: 318.75px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 750px) {
+    * {
+        font-size: 24px;
+    }
+}
+
+/* First BreakPoint CSS Change >750 or min-width: 751px; */
+@media (min-width: 751px) and (max-width: 1099px) {
+    * {
+        font-size: 28px;
+    }
+
+    footer div.logoContainer {
+        width: 525px;
+    }
+
+    header div.navBarContainer {
+        display: flex;
+    }
+
+    header button.toggleIconContainer {
+        display: none;
+    }
+
+    div.offCanvassContainer {
+        display: none;
+    }
+
+    /* Carousel 1 Change (Now Grid and Font follows the size for small devices) */
+    section.sectionBetween div.carousel1 div.optionsForYou div.optionContainer h3 {
+        font-size: 1.1428571429rem;
+
+    }
+    
+    section.sectionBetween div.carousel1 div.optionsForYou div.optionContainer p {
+        font-size: 0.5714285714rem;
+    }
+
+    section.sectionBetween div.carousel1 button.carousel1Buttons {
+        display: none;
+    }
+
+    section.sectionBetween div.carousel1 div.optionsForYou {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section.sectionBetween div.carousel1 div.optionsForYou div.optionContainer {
+        padding: 0 2%;
+        width: 45%;
+        height: 75vw;
+        margin-bottom: 3%;
+    }
+
+    /* Carousel 2 Change (Now Grid and Font follows the size for small devices) */
+    section.section2 div.carousel2 div.popularOptions div.popularOptionsContainer h3 {
+        font-size: 0.9rem;
+    }
+    
+    section.section2 div.carousel2 div.popularOptions div.popularOptionsContainer p {
+        font-size: 0.6rem;
+    }
+
+    section.section2 div.carousel2 button.carousel2Buttons {
+        display: none;
+    }
+
+    section.section2 div.carousel2 div.popularOptions {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section.section2 div.carousel2 div.popularOptions div.popularOptionsContainer {
+        padding: 0 2%;
+        width: 45%;
+        height: 80vw;
+        margin-bottom: 3%;
+    }
+}
+
+/* Second BreakPoint CSS Change >=1100 or min-width: 1100px; */
+@media (min-width: 1100px) {
+    * {
+        font-size: 28px;
+    }
+
+    footer div.logoContainer {
+        width: 525px;
+    }
+    
+    header div.navBarContainer {
+        display: flex;
+    }
+
+    header button.toggleIconContainer {
+        display: none;
+    }
+
+    div.offCanvassContainer {
+        display: none;
+    }
+
+    section.sectionBetween div.carousel1 div.optionsForYou div.optionContainer h3 {
+        font-size: 1.75rem;
+    }
+    
+    section.sectionBetween div.carousel1 div.optionsForYou div.optionContainer p {
+        font-size: 0.75rem;
+    }
+
+    section.section2 div.carousel2 div.popularOptions div.popularOptionsContainer h3 {
+        font-size: 0.9rem;
+    }
+    
+    section.section2 div.carousel2 div.popularOptions div.popularOptionsContainer p {
+        font-size: 0.6rem;
+    }
+
+    section.sectionBetween div.carousel1 button.carousel1Buttons {
+        display: none;
+    }
+
+    section.sectionBetween div.carousel1 div.optionsForYou {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section.sectionBetween div.carousel1 div.optionsForYou div.optionContainer {
+        padding: 0 2%;
+        width: 45%;
+        height: 75vw;
+        margin-bottom: 3%;
+    }
+
+    
+    section.section2 div.carousel2 button.carousel2Buttons {
+        display: none;
+    }
+
+    section.section2 div.carousel2 div.popularOptions {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    section.section2 div.carousel2 div.popularOptions div.popularOptionsContainer {
+        padding: 0 2%;
+        width: 30%;
+        height: 60vw;
+        margin-bottom: 3%;
+    }
+}

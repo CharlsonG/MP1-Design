@@ -1,94 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP1 | by Charlson Guevarra</title>
-    <link rel="stylesheet" href="CSS/bootstrap.css">
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP1 | Charlson Guevarra</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
 <body>
-    <div class="imgContainer">
-        <img src="Images\Background Hiker.jpg" class="imgSection" alt="...">
+  <div class="offCanvassContainer">
+    <img src="Images\Travel Guide Logo.png" class="imgLogo" alt="Travel Logo Design">
+    <div class="navBarContainer">
+      <nav class="navBar">
+        <a class="navBarItem active" href="index.html">Main</a>
+        <a class="navBarItem" href="#">About Us</a>
+        <a class="navBarItem" href="#">Pricing</a>
+      </nav>
     </div>
-    <header class="header350 container-fluid position-sticky top-0 z-2">
-        <nav class="navbar">
-            <div class="container-fluid">
-              <img src="Images\Travel Guide Logo.png" class="img-fluid imgLogo" alt="...">
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <img src="Images\Travel Guide Logo.png" class="img-fluid imgLogo" alt="...">
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Main</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                      </li>
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Type your destination!" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main class="main350 container-fluid mw-100">
-        <section class="section350 container-fluid">
-            <div class="container-fluid p-0">
-                <div class="row p-0 mt-5">
-                    <div class="col d-flex flex-column justify-content-center align-items-start p-0">
-                        <p class="title1 text-light fw-bold mb-0">Explore The World!</p>
-                    </div>
-                </div>
-                <div class="row p-0">
-                    <div class="col-7 d-flex flex-column justify-content-center align-items-start p-0">
-                        <p class="paragraph1 text-light fw-bold mb-0">Invites you to embark on a thrilling journey of discovery and wanderlust. Leave the beaten path behind as you venture into the unknown, ready to uncover the extraordinary. From the vibrant city streets to the tranquil natural wonders, let your curiosity guide you as you immerse yourself in diverse cultures, breathtaking landscapes, and captivating experiences. Embrace the spirit of exploration, expand your horizons, and create cherished memories that will forever connect you to the beauty and wonder of our vast and awe-inspiring world.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="Images\DarkImage.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Images\Background Hiker.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Images\DarkImage.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  </div>
+
+  <header>
+    <img src="Images\Travel Guide Logo.png" class="imgLogo" alt="Travel Logo Design">
+    <button class="toggleIconContainer">
+      <div class="toggleLine"></div>
+      <div class="toggleLine"></div>
+      <div class="toggleLine"></div>
+    </button>
+    <div class="navBarContainer">
+      <nav class="navBar">
+        <a class="navBarItem active" href="index.html">Main</a>
+        <a class="navBarItem" href="#">About Us</a>
+        <a class="navBarItem" href="#">Pricing</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="section1">
+      <div id="mainTitleContainer">
+        <h1 id="mainTitle">Explore The World</h1>
+        <p id="mainTitleDescription">Discover the world's wonders with us. Unleash your spirit of adventure, immerse in diverse cultures, and create unforgettable memories in breathtaking landscapes. From thrilling escapades to serene retreats, let us be your guide to an extraordinary travel experience that will leave an indelible mark on your soul.</p>
+      </div>
+      <button id="pricing">See Offer</button>
+    </section>
+
+    <section class="sectionBetween">
+      <div class="carousel1">
+        <div class="optionsForYou">
+          <div class="optionContainer option1">
+            <h3 class="option1Title">Nature Lover</h3>
+            <p class="option1Description">Explore breathtaking landscapes, national parks, forests, mountains, lakes, and observe wildlife in their habitat.</p>
           </div>
+          <div class="optionContainer option2">
+            <h3 class="option2Title">Urban Exploration</h3>
+            <p class="option2Description">Discover vibrant cities with iconic landmarks, modern architecture, street markets, bustling nightlife, and cultural diversity.</p>
+          </div>
+          <div class="optionContainer option3">
+            <h3 class="option3Title">Cultural Exploration</h3>
+            <p class="option3Description">Engage with different cultures, traditions, history through landmarks, local markets, authentic cuisine, and community interaction.</p>
+          </div>
+          <div class="optionContainer option4">
+            <h3 class="option4Title">Relaxation and Wellness</h3>
+            <p class="option4Description">Unwind in serene environments with spa treatments, yoga retreats, meditation, and peaceful beach destinations.</p>
+          </div>
+        </div>
+        <button class="carousel1Buttons buttonBack"><</button>
+        <button class="carousel1Buttons buttonNext">></button>
+      </div>
+    </section>
 
-    </main>
-    <div class="imgContainer2">
-        <img src="Images\DarkImage.jpg" class="imgSection2" alt="...">
+    <section class="section2">
+      <div id="section2MainTitleContainer">
+        <h1 id="section2MainTitle">Popular Destinations</h1>
+      </div>
+
+      <div class="carousel2">
+        <div class="popularOptions">
+          <div class="popularOptionsContainer popular1">
+            <h3>Paris, France</h3>
+            <p>Known as the "City of Love," Paris offers iconic landmarks like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral, along with charming streets, world-class cuisine, and art galleries.</p>
+          </div>
+          <div class="popularOptionsContainer popular2">
+            <h3>Rome, Italy</h3>
+            <p>Rich in history and culture, Rome offers ancient ruins like the Colosseum and Roman Forum, as well as Renaissance treasures such as the Vatican City and St. Peter's Basilica.</p>
+          </div>
+          <div class="popularOptionsContainer popular3">
+            <h3>Tokyo, Japan</h3>
+            <p>A vibrant metropolis where tradition meets innovation, Tokyo offers a blend of futuristic technology, historic temples, bustling markets, and diverse culinary experiences.</p>
+          </div>
+          <div class="popularOptionsContainer popular4">
+            <h3>New York City, USA</h3>
+            <p>The city that never sleeps, New York City boasts famous landmarks such as Times Square, Statue of Liberty, Central Park, Broadway shows, and a diverse cultural scene.</p>
+          </div>
+          <div class="popularOptionsContainer popular5">
+            <h3>Sydney, Australia</h3>
+            <p>Surrounded by stunning beaches and natural beauty, Sydney is home to iconic landmarks like the Sydney Opera House and Harbour Bridge, along with vibrant neighborhoods and a lively food scene.</p>
+          </div>
+          <div class="popularOptionsContainer popular6">
+            <h3>Cape Town, South Africa</h3>
+            <p>Located at the tip of Africa, Cape Town offers breathtaking landscapes, including Table Mountain, beautiful beaches, vibrant markets, and a unique blend of cultures.</p>
+          </div>
+          <div class="popularOptionsContainer popular7">
+            <h3>Rio de Janeiro, Brazil</h3>
+            <p>Known for its vibrant Carnival, Rio de Janeiro offers stunning beaches like Copacabana and Ipanema, iconic sights like Christ the Redeemer, and a lively nightlife scene.</p>
+          </div>
+          <div class="popularOptionsContainer popular8">
+            <h3>Barcelona, Spain</h3>
+            <p>Famous for its unique architecture by Antoni Gaudí, Barcelona offers attractions such as the Sagrada Familia, Park Güell, Gothic Quarter, beautiful beaches, and a vibrant food and arts scene.</p>
+          </div>
+        </div>
+        <button class="carousel2Buttons buttonBack2"><</button>
+        <button class="carousel2Buttons buttonNext2">></button>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div id="section3TitleContainer">
+        <h1 id="section3Title">What can we offer?</h1>
+      </div>
+      <div class="subContainer">
+        <h3>Various Destinations</h3>
+        <p>Explore a world of options with diverse destinations to fulfill your wanderlust and discover new cultures.</p>
+      </div>
+      <div class="subContainer">
+        <h3>Everything is Included</h3>
+        <p>Enjoy a worry-free vacation with all-inclusive packages that cover accommodations, meals, activities, and more.</p>
+      </div>
+      <div class="subContainer">
+        <h3>Affordable Price</h3>
+        <p>Discover budget-friendly travel options without compromising quality, making your dream vacation accessible and enjoyable.</p>
+      </div>
+
+      <button class="seeMorePlaces">See More Places</button>
+    </section>
+  
+  </main>
+
+  <footer>
+    <div class="logoContainer">
+      <div class="logo">
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <div class="logo">
+        <i class="fab fa-skype"></i>
+      </div>
+      <div class="logo">
+        <i class="fas fa-envelope"></i>
+      </div>
     </div>
-
-
-
+    <div class="copyright">
+      &copy; 2023 Travel Guide Inc. All rights reserved
+    </div>
+  </footer>
 </body>
-<script src="Images\DarkImage.jpg"></script>
+<script src="JS/index.js"></script>
 </html>
