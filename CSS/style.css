@@ -172,6 +172,7 @@ section.section1 div h1#mainTitle {
     font-family: Brush Script MT;
     font-size: 3rem;
     margin: 0 0 30px;
+    padding: 0 30% 0 0;
     text-shadow: 5px 5px var(--fontShadowWhite02);
 }
 
