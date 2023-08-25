@@ -8,6 +8,8 @@
     --section1BackgroundImage: url('../Images/Background Hiker.jpg');
     --section2BackgroundImage: url('../Images/Background Highway.jfif');
     --section3BackgroundImage: url('../Images/Switzerland Mountains.jpg');
+    --section4BackgroundImage: url('../Images/ForestMountain.jpg');
+    --section5BackgroundImage: url('../Images/Autumn.jpg');
     --option1Image: url('../Images/Nature Lover.jpg');
     --option2Image: url('../Images/Urban Cities.jpg');
     --option3Image: url('../Images/Culture Exploration.jpg');
@@ -545,9 +547,55 @@ footer div.copyright {
     font-size: 0.75rem;
 }
 
+
+/* About Us Style Change */
+section.section4 {
+    margin-top: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: var(--section4BackgroundImage);
+    box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 1) inset;
+}
+
+section.section5 {
+    background-image: var(--section5BackgroundImage);
+    box-shadow: 0px 0px 40px 30px rgba(0, 0, 0, 1) inset;
+}
+
+section.section4 img.imgLogo {
+    width: 200px;
+    height: auto;
+    background-color: transparent;
+}
+
+section.section4 div.section4TitleContainer,
+section.section5 div.section4TitleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+section.section4 div.section4TitleContainer h1,
+section.section5 div.section4TitleContainer h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+section.section4 div.section4TitleContainer p,
+section.section5 div.section4TitleContainer p {
+    font-size: 0.75rem;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    margin: 18px;
+}
+
 /* Font Size Media */
 
-@media (min-width: 425px) and (max-width: 559px) {
+@media (min-width: 425px) and (max-width: 599px) {
     * {
         font-size: 20px;
     }
